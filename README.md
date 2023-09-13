@@ -7,3 +7,4 @@
 - 以消滅所有敵棋為勝，若是僵持不下則和局，若步數總和超過100步，系統會自動認定為和棋。
 
 
+![image] (https://github.com/jim37500/chinese-chess/blob/main/images/display/eatpiece-display.png)
