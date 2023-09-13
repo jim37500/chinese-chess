@@ -6,5 +6,12 @@
   2. 繼序輪流翻棋或移行，移行應朝縱或橫向移動，每著只能移動一枚本方棋至鄰邊格，當移至空格或剋除(吃)低等或同等的敵方明棋。
 - 以消滅所有敵棋為勝，若是僵持不下則和局，若步數總和超過100步，系統會自動認定為和棋。
 
+### 吃棋規則
+- 棋子的大小是按照大盤的排列順序所定義，其規則如下：
+  1. 將帥>士仕>象相>車俥>馬傌>砲炮>卒兵
+  2. 兵卒>將帥
+- **砲（炮）」能將一個棋子當作炮台，跳過炮台（翻山）吃掉對手的一個棋子，且不受階級限制。（如右圖，綠色代表可吃子/移動，紅色代表不可吃子/移動）**
 
-![image] (https://github.com/jim37500/chinese-chess/blob/main/images/display/eatpiece-display.png)
+
+![吃棋示範](https://github.com/jim37500/chinese-chess/blob/main/images/display/eatpiece-display.png)
+
