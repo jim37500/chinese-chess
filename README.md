@@ -5,6 +5,16 @@
   1. 將一枚暗棋翻成明棋。先行方第一著翻出棋子的顏色，該色成為他的本方棋子；反之為敵方。
   2. 繼序輪流翻棋或移行，移行應朝縱或橫向移動，每著只能移動一枚本方棋至鄰邊格，當移至空格或剋除(吃)低等或同等的敵方明棋。
 - 以消滅所有敵棋為勝，若是僵持不下則和局，若步數總和超過100步，系統會自動認定為和棋。
+- 紅/黑方起始棋子有：
+  1. 帥/將 *1
+  2. 仕/士 *2
+  3. 相/象 *2
+  4. 俥/車 *2
+  5. 傌/馬 *2
+  6. 炮/包 *2
+  7. 兵/卒 *5
+  - 總計每方共16個棋子
+  
 
 ### 吃棋規則
 - 棋子的大小是按照大盤的排列順序所定義，其規則如下：
@@ -14,4 +24,17 @@
 
 
 ![吃棋示範](https://github.com/jim37500/chinese-chess/blob/main/images/display/eatpiece-display.png)
+
+
+## 遊戲示範
+### 起始畫面
+![起始畫面](https://github.com/jim37500/chinese-chess/blob/main/images/display/initial.png)
+
+### 中途結束遊戲(投降)
+可點選棋盤上方頭像旁邊的棋子，會出現「是否投降」，點選「是」則投降，中斷遊戲。
+![投降示範](https://github.com/jim37500/chinese-chess/blob/main/images/display/ask-surrender.png)
+
+### 結束畫面
+當一方獲勝或是平局時，即出現結束畫面，點選中間「開新一局」即可重新開始遊戲
+![結束畫面](https://github.com/jim37500/chinese-chess/blob/main/images/display/endgame.png)
 
