@@ -1,0 +1,321 @@
+@media (max-width: 1400px) {
+  .board {
+    column-gap: 6px;
+    row-gap: 6px;
+    padding: 8px;
+  }
+
+  .single-grid {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .piece-img {
+    width: 200px;
+  }
+
+  .decoration-left-top-v,
+  .decoration-right-top-v,
+  .decoration-left-bottom-v,
+  .decoration-right-bottom-v {
+    height: 27px;
+    width: 5px;
+  }
+
+  .decoration-left-top-h,
+  .decoration-right-top-h,
+  .decoration-left-bottom-h,
+  .decoration-right-bottom-h {
+    width: 27px;
+    height: 5px;
+  }
+
+  .diagonal,
+  .diagonal-n {
+    width: 150px;
+    height: 6px;
+  }
+ 
+  .end-game-container {
+    width: 858px;
+    height: 434px;
+  }
+
+  .black-king-icon-container, 
+  .red-king-icon-container {
+    top: -115px;
+  }
+
+  .king-icon {
+    width: 100px;
+  }
+
+  .black-arrow-icon1,
+  .black-arrow-icon2,
+  .red-arrow-icon1,
+  .red-arrow-icon2 {
+    width: 48px;
+  }
+
+  .surrender-img {
+    width: 100px;
+  }
+
+  .left-die-piece,
+  .right-die-piece {
+    width: 30px;
+    height: 434px;
+    margin: 10px;
+}
+
+  .invisible-img {
+    width: 115px;
+  }
+  
+  .die-piece-img {
+    width: 115px;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .board {
+    column-gap: 4px;
+    row-gap: 4px;
+    padding: 6px;
+    margin-left: -40px;
+    margin-right: 50px;
+  }
+
+  .single-grid {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .piece-img {
+    width: 160px;
+  }
+
+  .decoration-left-top-v,
+  .decoration-right-top-v,
+  .decoration-left-bottom-v,
+  .decoration-right-bottom-v {
+    height: 20px;
+    width: 4px;
+  }
+
+  .decoration-left-top-h,
+  .decoration-right-top-h,
+  .decoration-left-bottom-h,
+  .decoration-right-bottom-h {
+    width: 20px;
+    height: 4px;
+  }
+
+  .diagonal,
+  .diagonal-n {
+    width: 120px;
+    height: 4px;
+  }
+ 
+  .end-game-container {
+    width: 680px;
+    height: 344px;
+  }
+
+  .black-king-icon-container {
+    top: -105px;
+    left: -100px;
+  }
+
+  .red-king-icon-container {
+    top: -105px;
+    right: -100px;
+  }
+
+  .king-icon {
+    width: 90px;
+  }
+
+  .black-arrow-icon1,
+  .black-arrow-icon2,
+  .red-arrow-icon1,
+  .red-arrow-icon2 {
+    width: 40px;
+  }
+
+  .surrender-img {
+    width: 90px;
+  }
+
+  .ask-surrender {
+    font-size: 16px;
+  }
+
+  .surrender-yes,
+  .surrender-no {
+    font-size: 12px;
+  }
+
+  .left-die-piece,
+  .right-die-piece {
+    width: 30px;
+    height: 344px;
+    margin: 10px;
+}
+
+  .invisible-img {
+    width: 100px;
+  }
+  
+  .die-piece-img {
+    width: 100px;
+    margin-top: -63px;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .board {
+    column-gap: 3px;
+    row-gap: 3px;
+    padding: 4px;
+    margin-left: -45px;
+    margin-right: 55px;
+  }
+
+  .single-grid {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .piece-img {
+    width: 120px;
+  }
+
+  .decoration-left-top-v {
+    right: 3px;
+    bottom: 3px;
+    width: 3px;
+    height: 15px;
+  }
+  
+  .decoration-left-top-h {
+    right: 3px;
+    bottom: 3px;
+    width: 15px;
+    height: 3px;
+  }
+  
+  .decoration-right-top-v {
+    left: 3px;
+    bottom: 3px;
+    width: 3px;
+    height: 15px;
+  }
+  
+  
+  .decoration-right-top-h {
+    left: 3px;
+    bottom: 3px;
+    width: 15px;
+    height: 3px;
+  }
+  
+  .decoration-left-bottom-v {
+    right: 3px;
+    top: 3px;
+    width: 3px;
+    height: 15px;
+  }
+  
+  .decoration-left-bottom-h {
+    right: 3px;
+    top: 3px;
+    width: 15px;
+    height: 3px;
+  }
+  
+  .decoration-right-bottom-v {
+    left: 3px;
+    top: 3px;
+    width: 3px;
+    height: 15px;
+  }
+  
+  .decoration-right-bottom-h {
+    left: 3px;
+    top: 3px;
+    width: 15px;
+    height: 3px;
+  }
+
+  .diagonal,
+  .diagonal-n {
+    width: 90px;
+    height: 3px;
+  }
+ 
+  .end-game-container {
+    width: 509px;
+    height: 257px;
+  }
+
+  .black-king-icon-container {
+    top: -90px;
+    left: -90px;
+  }
+
+  .red-king-icon-container {
+    top: -90px;
+    right: -90px;
+  }
+
+  .king-icon {
+    width: 80px;
+  }
+
+  .black-arrow-icon1,
+  .black-arrow-icon2,
+  .red-arrow-icon1,
+  .red-arrow-icon2 {
+    width: 30px;
+  }
+
+  .black-ask-surrender-container,
+  .red-ask-surrender-container {
+    margin-top: -15px;
+  }
+
+  .surrender-img {
+    width: 80px;
+  }
+
+  .ask-surrender {
+    font-size: 14px;
+  }
+
+  .surrender-yes,
+  .surrender-no {
+    font-size: 10px;
+  }
+
+  .left-die-piece,
+  .right-die-piece {
+    width: 10px;
+    height: 257px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .invisible-img {
+    width: 70px;
+    margin-bottom: -50px;
+  }
+  
+  .die-piece-img {
+    width: 70px;
+    margin-top: -40px;
+  }
+}

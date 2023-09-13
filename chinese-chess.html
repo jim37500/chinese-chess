@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>象棋小盤</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/chinese-chess.css">
+    <link rel="stylesheet" href="styles/chinese-chess-response-design.css">
+  </head>
+
+  <body>
+    <div class="header">
+
+    </div>
+    <div class="main">
+
+      <!-- 左方殘子 -->
+      <div class="left-die-piece js-left-die-piece2">
+        <img class="invisible-img" src="images/chinese-chess/unfold.png">
+      </div>
+
+      <div class="left-die-piece js-left-die-piece1">
+        <img class="invisible-img" src="images/chinese-chess/unfold.png">
+      </div>
+      <!-- 棋盤 -->
+      <div class="board js-board">
+        <!-- 結束畫面 -->
+        <div class="end-game-container">
+          <div class="end-game-content">
+            <div class="result-message js-result-message"></div>
+            <button class="new-game-button js-new-game-button">開新一局</button>
+          </div>
+        </div>
+
+
+        <!-- 王頭像 -->
+        <div class="black-king-icon-container js-black-king-icon-container">
+          <div class="black-ask-surrender-container js-black-ask-surrender-container">
+            <div class="ask-surrender">
+              是否認輸?
+            </div>
+            <button class="surrender-yes js-black-surrender-yes">是</button>
+            <button class="surrender-no js-black-surrender-no">否</button>
+          </div>
+          <div class="surrender-container js-black-surrender-container">
+            <img class="surrender-img" src="images/chinese-chess/black-surrender.png">
+          </div>
+          <img class="king-icon" src="images/chinese-chess/black-king.png">
+          <img class="black-arrow-icon1" src="images/chinese-chess/black-arrow.png">
+          <img class="black-arrow-icon2" src="images/chinese-chess/black-arrow.png">
+        </div>
+  
+        <div class="red-king-icon-container js-red-king-icon-container">
+          <img class="red-arrow-icon2" src="images/chinese-chess/red-arrow.png">
+          <img class="red-arrow-icon1" src="images/chinese-chess/red-arrow.png">
+          <img class="king-icon" src="images/chinese-chess/red-king.png">
+          <div class="surrender-container js-red-surrender-container">
+            <img class="surrender-img" src="images/chinese-chess/red-surrender.png">
+          </div>
+          <div class="red-ask-surrender-container js-red-ask-surrender-container">
+            <div class="ask-surrender">
+              是否認輸?
+            </div>
+            <button class="surrender-yes js-red-surrender-yes">是</button>
+            <button class="surrender-no js-red-surrender-no">否</button>
+          </div>
+        </div>
+        <!-- Row1 -->
+        <div class="single-grid style-grid js-single-grid">
+          <div class="decoration-right-top-v"></div>
+          <div class="decoration-right-top-h"></div>
+          <img class="piece-img" id="js-piece-img00" src="images/chinese-chess/unfold.png">
+        </div>
+        <div class="single-grid style-grid js-single-grid">
+          <div class="decoration-left-top-v"></div>
+          <div class="decoration-left-top-h"></div>
+          <img class="piece-img" id="js-piece-img01" src="images/chinese-chess/unfold.png">
+        </div>
+        <div class="single-grid style-grid js-single-grid">
+          <div class="decoration-right-top-v"></div>
+          <div class="decoration-right-top-h"></div>
+          <img class="piece-img" id="js-piece-img02" src="images/chinese-chess/unfold.png">
+        </div>
+        <div class="single-grid style-grid js-single-grid">
+          <div class="decoration-left-top-v"></div>
+          <div class="decoration-left-top-h"></div>
+          <img class="piece-img" id="js-piece-img03" src="images/chinese-chess/unfold.png">
+        </div>
+        <div class="single-grid style-grid js-single-grid">
+          <div class="decoration-right-top-v"></div>
+          <div class="decoration-right-top-h"></div>
+          <img class="piece-img" id="js-piece-img04" src="images/chinese-chess/unfold.png">
+        </div>
+        <div class="single-grid style-grid js-single-grid">
+          <div class="decoration-left-top-v"></div>
+          <div class="decoration-left-top-h"></div>
+          <img class="piece-img" id="js-piece-img05" src="images/chinese-chess/unfold.png">
+        </div>
+        <div class="single-grid style-grid js-single-grid">
+          <div class="decoration-right-top-v"></div>
+          <div class="decoration-right-top-h"></div>
+          <img class="piece-img" id="js-piece-img06" src="images/chinese-chess/unfold.png">
+        </div>
+        <div class="single-grid style-grid js-single-grid">
+          <div class="decoration-left-top-v"></div>
+          <div class="decoration-left-top-h"></div>
+          <img class="piece-img" id="js-piece-img07" src="images/chinese-chess/unfold.png">
+        </div>
+
+         <!-- Row2 -->
+         <div class="single-grid style-grid js-single-grid">
+          <div class="decoration-left-top-v"></div>
+          <div class="decoration-left-top-h"></div>
+          <div class="decoration-right-bottom-v"></div>
+          <div class="decoration-right-bottom-h"></div>
+          <img class="piece-img" id="js-piece-img10" src="images/chinese-chess/unfold.png">
+        </div>
+        <div class="single-grid style-grid js-single-grid">
+          <div class="decoration-right-top-v"></div>
+          <div class="decoration-right-top-h"></div>
+          <div class="decoration-left-bottom-v"></div>
+          <div class="decoration-left-bottom-h"></div>
+          <img class="piece-img" id="js-piece-img11" src="images/chinese-chess/unfold.png">
+        </div>
+        <div class="single-grid style-grid js-single-grid">
+          <div class="decoration-right-bottom-v"></div>
+          <div class="decoration-right-bottom-h"></div>
+          <img class="piece-img" id="js-piece-img12" src="images/chinese-chess/unfold.png">
+         </div>
+         <div class="single-grid style-grid js-single-grid">
+          <div class="decoration-left-bottom-v"></div>
+          <div class="decoration-left-bottom-h"></div>
+          <img class="piece-img" id="js-piece-img13" src="images/chinese-chess/unfold.png">
+         </div>
+         <div class="single-grid style-grid js-single-grid">
+          <div class="decoration-right-bottom-v"></div>
+          <div class="decoration-right-bottom-h"></div>
+          <img class="piece-img" id="js-piece-img14" src="images/chinese-chess/unfold.png">
+         </div>
+         <div class="single-grid style-grid js-single-grid">
+          <div class="decoration-left-bottom-v"></div>
+          <div class="decoration-left-bottom-h"></div>
+          <img class="piece-img" id="js-piece-img15" src="images/chinese-chess/unfold.png">
+         </div>
+         <div class="single-grid style-grid js-single-grid">
+          <div class="decoration-left-top-v"></div>
+          <div class="decoration-left-top-h"></div>
+          <div class="decoration-right-bottom-v"></div>
+          <div class="decoration-right-bottom-h"></div>
+          <img class="piece-img" id="js-piece-img16" src="images/chinese-chess/unfold.png">
+        </div>
+        <div class="single-grid style-grid js-single-grid">
+          <div class="decoration-right-top-v"></div>
+          <div class="decoration-right-top-h"></div>
+          <div class="decoration-left-bottom-v"></div>
+          <div class="decoration-left-bottom-h"></div>
+          <img class="piece-img" id="js-piece-img17" src="images/chinese-chess/unfold.png">
+        </div>
+
+        <!-- Row3 -->
+        <div class="single-grid style-grid js-single-grid">
+          <div class="decoration-left-bottom-v"></div>
+          <div class="decoration-left-bottom-h"></div>
+          <img class="piece-img" id="js-piece-img20" src="images/chinese-chess/unfold.png">
+        </div>
+        <div class="single-grid style-grid js-single-grid">
+          <div class="decoration-right-bottom-v"></div>
+          <div class="decoration-right-bottom-h"></div>
+          <img class="piece-img" id="js-piece-img21" src="images/chinese-chess/unfold.png">
+        </div>
+        <div class="single-grid js-single-grid">
+          <img class="piece-img" id="js-piece-img22" src="images/chinese-chess/unfold.png">
+        </div>
+        <div class="single-grid style-grid js-single-grid">
+          <img class="piece-img" id="js-piece-img23" src="images/chinese-chess/unfold.png">
+          <div class="diagonal"></div>
+        </div>
+        <div class="single-grid style-grid js-single-grid">
+          <div class="diagonal-n"></div>
+          <img class="piece-img" id="js-piece-img24" src="images/chinese-chess/unfold.png">
+        </div>
+        <div class="single-grid js-single-grid">
+          <img class="piece-img" id="js-piece-img25" src="images/chinese-chess/unfold.png">
+        </div>
+        <div class="single-grid style-grid js-single-grid">
+          <div class="decoration-left-bottom-v"></div>
+          <div class="decoration-left-bottom-h"></div>
+          <img class="piece-img" id="js-piece-img26" src="images/chinese-chess/unfold.png">
+        </div>
+        <div class="single-grid style-grid js-single-grid">
+          <div class="decoration-right-bottom-v"></div>
+          <div class="decoration-right-bottom-h"></div>
+          <img class="piece-img" id="js-piece-img27" src="images/chinese-chess/unfold.png">
+         </div>
+
+         <!-- Row4 -->
+        <div class="single-grid js-single-grid">
+          <img class="piece-img" id="js-piece-img30" src="images/chinese-chess/unfold.png">
+        </div>
+        <div class="single-grid js-single-grid">
+          <img class="piece-img" id="js-piece-img31" src="images/chinese-chess/unfold.png">
+        </div>
+        <div class="single-grid js-single-grid">
+          <img class="piece-img" id="js-piece-img32" src="images/chinese-chess/unfold.png">
+        </div>
+        <div class="single-grid style-grid js-single-grid">
+          <div class="diagonal-n"></div>
+          <img class="piece-img" id="js-piece-img33" src="images/chinese-chess/unfold.png">
+        </div>
+        <div class="single-grid style-grid js-single-grid">
+          <div class="diagonal"></div>
+          <img class="piece-img" id="js-piece-img34" src="images/chinese-chess/unfold.png">
+        </div>
+        <div class="single-grid js-single-grid">
+          <img class="piece-img" id="js-piece-img35" src="images/chinese-chess/unfold.png">
+        </div>
+        <div class="single-grid js-single-grid">
+          <img class="piece-img" id="js-piece-img36" src="images/chinese-chess/unfold.png">
+        </div>
+        <div class="single-grid js-single-grid">
+          <img class="piece-img" id="js-piece-img37" src="images/chinese-chess/unfold.png">
+        </div>
+      </div>
+
+      <!-- 右方殘子 -->
+      <div class="right-die-piece js-right-die-piece1">
+        <img class="invisible-img" src="images/chinese-chess/unfold.png">
+      </div>
+
+      <div class="right-die-piece js-right-die-piece2">
+        <img class="invisible-img" src="images/chinese-chess/unfold.png">
+      </div>
+    </div>
+  
+
+    <script src="scripts/chinese-chess.js"></script>
+  </body>
+</html>
